@@ -16,7 +16,7 @@
           </tr>
         </thead>
         <tbody>
-        <?php foreach ($list_user as $user) { ?>    
+        <?php foreach ($list_user as $user) { ?>
           <tr>
             <td><?php echo increment_once($index); ?></td>
             <td><?php echo $user->email; ?></td>
