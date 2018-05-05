@@ -10,7 +10,7 @@
     </head>
     <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Admin Panel</a>
+        <a class="navbar-brand" href="admin.php?c=user&a=index">Tranh Chính</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -20,15 +20,56 @@
                 <a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
               </li>
               
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Users
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=user&a=index">Danh sach user</a>
-                  <a class="dropdown-item" href="admin.php?c=user&a=create">Them moi user</a>
+                  <a class="dropdown-item" href="admin.php?c=user&a=index">Danh Sách</a>
+                  <a class="dropdown-item" href="admin.php?c=user&a=create">Thêm Mới</a>
                 </div>
-              </li>              
+              </li> 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Singers
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="admin.php?c=singer&a=index">Danh Sách</a>
+                  <a class="dropdown-item" href="admin.php?c=singer&a=create">Thêm Mới</a>
+                </div>
+              </li> 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Albums
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="admin.php?c=album&a=index">Danh Sách</a>
+                  <a class="dropdown-item" href="admin.php?c=album&a=create">Thêm Mới</a>
+                </div>
+              </li> 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Songs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="admin.php?c=song&a=index">Danh Sách</a>
+                  <a class="dropdown-item" href="admin.php?c=song&a=create">Thêm Mới</a>
+                </div>
+              </li> 
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Type
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="admin.php?c=type&a=index">Danh Sách</a>
+                  <a class="dropdown-item" href="admin.php?c=type&a=create">Thêm Mới</a>
+                </div>
+              </li>             
             </ul>            
         </div>
 
