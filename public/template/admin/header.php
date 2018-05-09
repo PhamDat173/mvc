@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title><?php if(isset($title)) echo $title; ?></title>
+        <title>Trang Chủ</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="public/css/style.css">
+        <link rel="stylesheet" type="text/css" href="public/css/css.css">
         <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="public/css/custom.css">
         <script src="public/js/jquery-3.2.1.slim.min.js"></script>
         <script type="text/javascript" src="public/js/bootstrap.min.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="admin.php?c=user&a=index">Tranh Chính</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="admin.php">Home <span class="sr-only">(current)</span></a>
-              </li>
-              
+    <header>
+    <div class="logo">
+      <a href="index.php"><img src="./logo.png" title="Magnetic" alt="Magnetic" width="100px" height="100px" /></a>
+    </div><!-- end logo -->
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Users
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=user&a=index">Danh Sách</a>
-                  <a class="dropdown-item" href="admin.php?c=user&a=create">Thêm Mới</a>
-                </div>
-              </li> 
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Singers
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=singer&a=index">Danh Sách</a>
-                  <a class="dropdown-item" href="admin.php?c=singer&a=create">Thêm Mới</a>
-                </div>
-              </li> 
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Albums
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=album&a=index">Danh Sách</a>
-                  <a class="dropdown-item" href="admin.php?c=album&a=create">Thêm Mới</a>
-                </div>
-              </li> 
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Songs
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=song&a=index">Danh Sách</a>
-                  <a class="dropdown-item" href="admin.php?c=song&a=create">Thêm Mới</a>
-                </div>
-              </li> 
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Type
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="admin.php?c=type&a=index">Danh Sách</a>
-                  <a class="dropdown-item" href="admin.php?c=type&a=create">Thêm Mới</a>
-                </div>
-              </li>             
-            </ul>            
-        </div>
-
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Setting
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="logout.php">Logout</a>
-                </div>
-              </li>
-        </ul>
+    <div id="menu"></div>
+    <nav>
+      <ul>
+        <li><a href="index.php" class="selected">Trang chủ</a></li>
+        <li><a href="#">User</a>
+          <ul class="submenu">
+            <li><a href="admin.php?c=user&a=index">»Danh sách</a></li>
+            <li><a href="admin.php?c=user&a=create">»Thêm mới</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Singer</a>
+          <ul class="submenu">
+            <li><a href="admin.php?c=singer&a=index">»Danh sách</a></li>
+            <li><a href="admin.php?c=singer&a=create">»Thêm mới</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Album</a>
+          <ul class="submenu">
+            <li><a href="admin.php?c=album&a=index">»Danh sách</a></li>
+            <li><a href="admin.php?c=album&a=create">»Thêm mới</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Song</a>
+          <ul class="submenu">
+            <li><a href="admin.php?c=song&a=index">»Danh sách</a></li>
+            <li><a href="admin.php?c=song&a=create">»Thêm mới</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Type</a>
+          <ul class="submenu">
+            <li><a href="admin.php?c=type&a=index">»Danh sách</a></li>
+            <li><a href="admin.php?c=type&a=create">»Thêm mới</a></li>
+          </ul>
+        </li>
+        <li><a href="logout.php">Logout</a></li>
+      </ul>
     </nav>
+
+    <div class="footer clearfix">
+
+      <div class="rights">
+        <p>Copyright © 2018 by Phạm Đạt-Trịnh Quang-Huỳnh Thảo</p>
+      </div><!-- end rights -->
+    </div ><!-- end footer -->
+  </header><!-- end header -->
+</body>
+</html>
