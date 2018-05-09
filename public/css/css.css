@@ -1,0 +1,122 @@
+.row{
+overflow: hidden;
+margin: 1.5em auto;
+}
+.row .col{
+float: left;
+width: 25%;
+margin-right: 1em;
+padding: 1em;
+}
+.row .col img{
+float: left;
+width: 300px;
+height: 300px;
+}
+.c-product-item {
+display: table;
+box-sizing: border-box;
+position: relative;
+background-color: rgb(199, 181, 181);
+border: 2px solid transparent;
+transition: border-color .15s ease-in;
+text-align: center;
+line-height: 2.4;
+text-decoration: none;
+}
+.c-product-item__info {
+padding: 40px 70px 70px;
+}
+.c-product-item__title {
+height: 215px;
+color: blue;
+font-size: 20px;
+}
+h3 {
+display: block;
+font-size: 20px;
+font-weight: bold;
+height: 0px;
+color: red;
+}
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin-left: 15%;
+margin-top: 20px;
+}/*Header*/
+@media (min-width:1099px){
+header{
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 150px;
+min-height: 100%;
+padding: 0 0 0 5px;
+background: #ffffff;
+float: left;
+z-index: 9999;
+}
+
+header .logo{
+margin-top: 20px;
+margin-left: 25px
+}
+
+header nav ul{
+display: block;
+margin-top: 50px;
+}
+
+header nav ul li{
+display: block;
+margin-bottom: 30px;
+position: relative;
+}
+
+header nav ul li a{
+color: #454545;
+display: block;
+font-family: "raleway-regular", arial;
+font-size: 14px;
+text-decoration: none;
+letter-spacing: 1px;
+}
+
+header nav ul li a:hover,
+header nav ul li a.selected{
+color: #969595;
+}
+
+header .submenu{
+    position: absolute;
+    margin-top: -20px;
+    left: 50px;
+    display: none;
+    width: 150px;
+    background-color: white;
+}
+
+header nav ul li:hover .submenu{
+    display: block;
+}
+
+header .footer{
+position: absolute;
+bottom: 20px;
+}
+
+header .rights p{
+color: #454545;
+font-family: "raleway-regular", arial;
+font-size: 11px;
+letter-spacing: 1px;
+line-height: 18px;
+}
+
+header .rights a{
+font-family: "raleway-bold", arial;
+font-weight: bold;
+text-decoration: none;
+}
