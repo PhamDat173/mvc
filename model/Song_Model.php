@@ -10,7 +10,15 @@
 
   public function all(){
     $conn = FT_Database::instance()->getConnection();
-    $sql = 'select * from songs';
+    $sql = 'SELECT songs.id,songs.name,songs.url,songs.lyrics,
+    singers.name as singers_name,
+    albums.name as albums_name,
+    types.name as types_name
+     FROM (((songs
+     INNER JOIN singers
+     ON songs.singers_id = singers.id)
+     INNER JOIN  albums ON songs.albums_id=albums.id)
+     INNER JOIN  types ON songs.types_id=types.id)';
     $result = mysqli_query($conn, $sql);
     $list_song = array();
 
@@ -23,9 +31,9 @@
             $song->name = $row['name'];
             $song->lyrics = $row['lyrics'];
             $song->url = $row['url'];
-            $song->albums_id=$row['albums_id'];
-            $song->singers_id = $row['singers_id'];
-            $song->types_id = $row['types_id'];
+            $song->albums_id=$row['albums_name'];
+            $song->singers_id = $row['singers_name'];
+            $song->types_id = $row['types_name'];
             $list_song[] = $song;
         }
 
