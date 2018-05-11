@@ -12,7 +12,7 @@
     <body>
     <header>
     <div class="logo">
-      <a href="index.php"><img src="./logo.png" title="Magnetic" alt="Magnetic" width="100px" height="100px" /></a>
+      <a href="index.php"><img src=".public\template\photo\logo.png" title="Magnetic" alt="Magnetic" width="100px" height="100px" /></a>
     </div><!-- end logo -->
 
     <div id="menu"></div>
